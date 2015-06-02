@@ -1,0 +1,195 @@
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+	@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+	h1, h2, h2, h4, h5, h6{ font-family: 'Montserrat'; }
+	.p0{padding: 0;}
+	.m0{margin: 0;}
+	b{ font-weight: 600; }
+	a, a:hover{ cursor:pointer; text-decoration: none; color: #fff; }
+	.section { /*height: 100vh;*/ height: auto; width: 100%; background: #fff; }
+	
+	.section.bpad{ padding: 100px 50px;}
+	@media (max-width: 850px) {
+		.section.bpad{ padding: 50px 25px;}
+	}
+	.project-cover {
+		/*position: relative;*/
+		position: fixed;
+		z-index: -1;
+		float: left;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100vh;
+		text-align: center;
+	}
+	.content-body{
+		box-shadow: 0 0 44px 0 rgba(0,0,0,.5); 
+		margin-top: 100vh;
+	}
+
+	#glucometer .project-cover {
+		background: linear-gradient(135deg,rgba(236, 15, 20, 0.95) 0,rgba(220, 31, 35, 0.9490196078431372) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CD2E46', endColorstr='#E4161C', GradientType=1);
+	}
+
+	#ambiportal .project-cover {
+		background: linear-gradient(135deg,rgba(46, 204, 113, .95) 0,rgba(39, 174, 96, .95) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ECC71F2', endColorstr='#27AE60F2', GradientType=1);
+	}
+
+	#wedinvite .project-cover {
+		background: linear-gradient(135deg,rgba(219, 219, 219, 0.95) 0,rgba(118, 118, 118, 0.95) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DBDBDBF2', endColorstr='#767676F2', GradientType=1);
+	}
+
+	#joespizza .project-cover {
+		background: linear-gradient(135deg,rgba(51, 51, 51, 0.95) 0,rgba(45, 45, 45, 0.95) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#2D2D2DF2', GradientType=1);
+	}
+
+	#joespizza .project-info img,
+	#wedinvite .project-info img{ margin-bottom: 10px; }
+
+	#metroui .project-cover {
+		background: linear-gradient(135deg,rgba(60,152,255,.95) 0,rgba(0,92,195,.95) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c98ff', endColorstr='#005cc3', GradientType=1);
+	}
+
+	.project-cover-title {
+		height: auto;
+		width: auto;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		color: #fff;
+		-webkit-transition: opacity: .25 ease;
+		-ms-transition: opacity: .25 ease;
+		-o-transition: opacity: .25 ease;
+		transition: opacity: .25 ease;
+
+		-webkit-perspective: 1000;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.project-cover h2 {
+		font-size: 2rem;
+		opacity: 0;
+		margin: 0;
+		opacity: 0.9;
+	}
+
+	.project-cover h1 {
+		font-size: 5rem;
+		line-height: 1em;
+	}
+
+	.scroll-down-tip{
+		display: block;
+		position: absolute;
+		left: 50%;
+		bottom: 5%;
+		z-index: 10;
+		color: #fff;
+		margin-left: -25px;
+		width: 50px;
+		height: 40px;
+		font-size: 1.4rem;
+		font-style: italic;
+		text-align: center;
+		opacity: .6;
+		cursor: pointer;
+		webkit-transition: all .2s cubic-bezier(0.165,.84,.44,1);
+		-o-transition: all .2s cubic-bezier(0.165,.84,.44,1);
+		transition: all .2s cubic-bezier(0.165,.84,.44,1);
+
+		-webkit-animation: pulse-down 3s ease-in infinite;
+		animation: pulse-down 3s ease-in infinite
+	}
+	.scroll-down-tip:hover { opacity: 1; }
+
+	/*------------Browser Scroll------------*/
+
+	.browser-topbar{ min-width: 100%; }
+	.browser-scroll{ }
+	.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools, .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools { right: 0; height: 200px; top: -20px; }
+
+
+
+	.next-project-wrapper { position: relative; color: #fff; overflow: hidden; }
+	
+	.resume-page-btn, .next-project {
+		background: #333;
+		text-align: center;
+		font-size: 3rem;
+		color: #33BB6D;
+		min-height: 150px;
+		cursor: pointer;
+	}
+	
+	
+	.resume-page-btn{ font-size: 1.5rem; text-transform: uppercase; font-weight: bold;  }
+	.resume-page-btn .resume-page-text { line-height: 150px; position: absolute;top: -20px; left: 0; width: 100%; text-align: center; opacity: 0; transition: all .2s ease; }
+	.resume-page-btn:hover .resume-page-text { top: -10px; opacity: 1; transition: all .2s ease; }
+	.resume-page-icon { font-size: 3rem; color: #33BB6D; width: 100%; text-align: center; line-height: 150px; }
+	.resume-page-btn:hover .resume-page-icon i{ top: 15%;  opacity: 1; transition: all .2s ease; }
+	.resume-page-btn .resume-page-icon i{ position: absolute; top: 0; left: 0; width: 100%; text-align: center; line-height: 150px; top: 0; opacity: .8; transition: all .2s ease; }
+
+	/*.next-project-wrapper .container{ overflow: hidden; border-radius: 5px 5px 0 0; }*/
+
+	.next-project { 
+		background-position: center left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.next-project-text:hover { top: 0; opacity: 1; transition: all .2s ease; }
+
+	.next-project-text {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		top: -40px;
+		bottom: 0;
+		cursor: pointer;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 150px;
+		background: rgba(51, 51, 51, 0.75);
+		opacity: 0;
+		transition: all .2s ease; 
+	}
+
+	.next_joes{ background-image: url(../images/templates/next_joes.jpg); }
+	.next_ambiportal{ background-image: url(../images/templates/next_ambiportal.jpg); }
+	.next_wedinvite{ background-image: url(../images/templates/next_wedinvite.jpg); }
+
+	/*---------------------ANIMATED SCRLL -------------------*/
+	@-webkit-keyframes pulse-down{
+		80%{ -webkit-transform:translateY(1px); transform:translateY(1px) }
+		85%{ -webkit-transform:translateY(4px); transform:translateY(4px) }
+		90%{ -webkit-transform:translateY(1px); transform:translateY(1px) }
+		95%{ -webkit-transform:translateY(7px); transform:translateY(7px) }
+		100%{ -webkit-transform:translateY(1px); transform:translateY(1px) }
+	}
+
+	@keyframes pulse-down{
+		80%{ -webkit-transform:translateY(1px); transform:translateY(1px) }
+		85%{ -webkit-transform:translateY(4px); transform:translateY(4px) }
+		90%{ -webkit-transform:translateY(1px); transform:translateY(1px) }
+		95%{ -webkit-transform:translateY(7px); transform:translateY(7px) }
+		100%{ -webkit-transform:translateY(1px); transform:translateY(1px) }
+	}
+
+	/** ClearFix For modern browsers  */
+	.clearfix:before,
+	.clearfix:after { content: " "; display: table; }
+	.clearfix:after { clear: both; }
+	.clearfix { *zoom: 1; }
